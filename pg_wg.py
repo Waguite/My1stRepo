@@ -1,0 +1,20 @@
+import pyautogui as pg
+import time
+pg.hotkey('ctrl','winleft','d')
+pg.hotkey('winleft')
+pg.typewrite('chrome\n',0.5)
+pg.hotkey('winleft','up')
+pg.typewrite('https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=true&continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den_US&utm_medium=button&utm_campaign=web&utm_content=gotodrive&usp=gtd&ltmpl=drive&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&navigationDirection=forward\n',0.005)
+time.sleep (3)
+
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('tab')
+time.sleep(.2)
+pg.hotkey('enter')
+time.sleep(.2)
+pg.typewrite('wguite@gcds.net',.02)
+time.sleep(.2)
+pg.hotkey('enter')
